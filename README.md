@@ -60,19 +60,13 @@ This project implements a **multi-level referral and earning system** with real-
 ## API Documentation
 ### GraphQL APIs
 #### 1. Query:
-{
-  getUserById(id: String!): User (Fetch User By ID)
-  getEarningReport(id: String!): EarningReport! (Fetch User's Earning report with multiple hirerchy)
-}
-
-
+`getUserById(id: String!): User` (Fetch User By ID)
+`getEarningReport(id: String!): EarningReport!` Fetch User's Earning report with multiple hirerchy
 
 #### 2. Mutation: 
-type Mutation {
-  createUser(data: CreateUserInput!): User!
-  updateUser(id: String!, data: UpdateUserInput!): User!
-  createPayment(data: CreatePaymentInput!): Payment!
-}
+`createUser(data: CreateUserInput!): User!`
+`updateUser(id: String!, data: UpdateUserInput!): User!`
+`createPayment(data: CreatePaymentInput!): Payment!`
 
 ### WebSocket Events
 - **Event:** `earningsUpdated`
