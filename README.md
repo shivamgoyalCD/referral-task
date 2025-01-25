@@ -72,7 +72,7 @@ This project implements a **multi-level referral and earning system** with real-
 - **Event:** `earningsUpdated`
   - Real-time updates for a user’s earnings when a payment is created
 
-####Test In PostMan
+## Test In PostMan
 - Make sure nest applicatication is running
 - Connect to `http://localhost:3000/graphql` using graphql endpoint. Here you can test different queries and mutations.
 #### Connect to Websockets
