@@ -72,14 +72,17 @@ This project implements a **multi-level referral and earning system** with real-
 - **Event:** `earningsUpdated`
   - Real-time updates for a user’s earnings when a payment is created
 
-## Test In PostMan
-- Make sure nest applicatication is running
-- Connect to `http://localhost:3000/graphql` using graphql endpoint. Here you can test different queries and mutations.
-#### Connect to Websockets
-- Open Socket.io in postman.
-- Connect to `http://localhost:3000/graphql`.
-- After Connection is establish add an Event `register`
-- In message write userID withount in inverted commas or space or line indentation
-- Send message using register
-- Now you can get live notification when user's earnings are updated
+## Test in Postman
+### GraphQL Endpoint
+- Ensure your Nest.js application is running.
+- Connect to `http://localhost:3000/graphql` as the GraphQL endpoint.
+- Test queries and mutations by composing them in Postman’s **Body** tab using the GraphQL syntax.
 
+### WebSocket Connection
+1. Open the Socket.io tool in Postman.
+2. Connect to: `http://localhost:3000/graphql`.
+3. After the connection is established:
+   - Add an event named `register`.
+   - In the message body, send the user ID as plain text (without quotes, spaces, or indentation).
+   - Click **Send** to register the user.
+4. Once registered, you’ll receive live notifications whenever the user’s earnings are updated.
